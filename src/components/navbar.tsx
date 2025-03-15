@@ -1,5 +1,4 @@
 import { LogOut } from 'lucide-react'
-import Link from 'next/link'
 
 import { Logo } from './logo'
 import { NavLinks } from './nav-links'
@@ -17,10 +16,10 @@ export function Navbar() {
       <div className="flex items-center gap-x-8">
         <NavbarDropdown />
         <Button asChild variant="secondary">
-          <Link href="/api/auth/logout">
+          <a href="/api/auth/logout">
             <LogOut className="size-4 mr-2" />
             Sair
-          </Link>
+          </a>
         </Button>
       </div>
     </header>

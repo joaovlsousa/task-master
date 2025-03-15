@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 
 import GithubLogo from '@/assets/github-logo.svg'
 import { Button } from '@/components/ui/button'
@@ -17,10 +16,10 @@ export function SignInWithGithubButton() {
 
   return (
     <Button className="w-full" asChild>
-      <Link href={githubSignInURL.toString()}>
+      <a href={githubSignInURL.toString()}>
         <Image src={GithubLogo} alt="github logo" className="size-4 mr-2" />
         Continue com o github
-      </Link>
+      </a>
     </Button>
   )
 }
